@@ -15,15 +15,15 @@ st.write('The model predicts the glass type according to the various input featu
 
 #Input features
 
-RI = st.slider('Refractive index: ', 1.5, 1.8)
-Na = st.slider('Sodium: ', 10, 18)
-Mg = st.slider('Magnessium: ', 0, 4)
-Al = st.slider('Alluminium: ', 0, 4)
-Si = st.slider('Sillicon: ', 70, 80)
-K = st.slider('Potassium: ', 0.0, 0.5)
-Ca = st.slider('Calcium: ', 5.0, 10.0)
-Ba = st.slider('Barium: ', 0, 5)
-Fe = st.slider('Iron: ', 0.0, 0.5)
+RI = st.sidebar.slider('Refractive index: ', 1.5, 1.8)
+Na = st.sidebar.slider('Sodium: ', 10, 18)
+Mg = st.sidebar.slider('Magnessium: ', 0, 4)
+Al = st.sidebar.slider('Alluminium: ', 0, 4)
+Si = st.sidebar.slider('Sillicon: ', 70, 80)
+K = st.sidebar.slider('Potassium: ', 0.0, 0.5)
+Ca = st.sidebar.slider('Calcium: ', 5.0, 10.0)
+Ba = st.sidebar.slider('Barium: ', 0, 5)
+Fe = st.sidebar.slider('Iron: ', 0.0, 0.5)
 
 #Preparing input features for the model
 features = np.array([[RI, Na, Mg, Al, Si, K, Ca, Ba, Fe]])
